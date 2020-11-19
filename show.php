@@ -17,15 +17,20 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Link </div></th>
+    <th width="200"> <div align="center">Function </div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['Name'];?></div></td>
-    <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <td><?php echo $Result['name'];?></div></td>
+    <td><?php echo $Result['comment'];?></td>
+    <td><?php echo $Result['link'];?></td>
+    <td>
+      <a href ="delete.php?ID=<?php echo $Result['ID'];?>" >Delete</a>
+      <a href ="update.php?ID=<?php echo $Result['ID'];?>" >Update</a>
+    </td>
   </tr>
 <?php
 }
