@@ -1,43 +1,30 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>ITF Lab</title>
+  <title>Comment Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-<?php
-$conn = mysqli_init();
-mysqli_real_connect($conn, '63070039itflab02.mysql.database.azure.com', 'chutima@63070039itflab02', 'Fah931755', 'ITFLab', 3306);
-if (mysqli_connect_errno($conn))
-{
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-}
-$res = mysqli_query($conn, 'SELECT * FROM guestbook');
-?>
-<table width="600" border="1">
-  <tr>
-    <th width="100"> <div align="center">Name</div></th>
-    <th width="350"> <div align="center">Comment </div></th>
-    <th width="150"> <div align="center">Link </div></th>
-    <th width="200"> <div align="center">Function </div></th>
-  </tr>
-<?php
-while($Result = mysqli_fetch_array($res))
-{
-?>
-  <tr>
-    <td><?php echo $Result['name'];?></div></td>
-    <td><?php echo $Result['comment'];?></td>
-    <td><?php echo $Result['link'];?></td>
-    <td>
-      <a href ="delete.php?ID=<?php echo $Result['ID'];?>" >Delete</a>
-      <a href ="update.php?ID=<?php echo $Result['ID'];?>" >Update</a>
-    </td>
-  </tr>
-<?php
-}
-?>
-</table>
-<?php
-mysqli_close($conn);
-?>
+  <div class="container">
+    <div class="card-header bg-primary text-white d-flex justify-content-between">
+     <h3>ADD</h4>
+     <a href="index.php" class="btn btn-light">BACK</a>
+    </div>
+    <form action="insert.php" method="post" id="CommentForm">
+      <div class="form-group mt-5">
+        <label class="m-3" for="name">Name</label>
+        <input type="text" class="form-control" name="name" id="idName" placeholder="Enter Name">
+        <label class="m-3" for="comment">Comment</label>
+        <textarea rows="5" class="form-control" cols="20" name="comment" id="idComment"
+          placeholder="Enter Comment"></textarea><br>
+        <label class="m-3" for="link">Link</label>
+        <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link">
+        <input class="btn btn-success mt-5" type="submit" id="commentBtn">
+      </div>
+    </form>
+  </div>
 </body>
 </html>
