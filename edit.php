@@ -29,6 +29,7 @@ body {
 
   <body>
       <div class="container">
+          <div class="card-header bg-info text-white d-flex justify-content-between">
            <h3>แก้ไข</h3>
            <a href="index.php" class="btn btn-warning">กลับ</a>
           </div>
