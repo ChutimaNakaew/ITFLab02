@@ -1,6 +1,6 @@
 <?php
 $conn = mysqli_connect('63070039itflab02.mysql.database.azure.com', 'chutima@63070039itflab02', 'Fah931755', 'ITFLab', 3306);
-$sql = 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'';
+$sql = 'DELETE FROM guestbook WHERE ID = ' . $_GET['ID'] . '';
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ $sql = 'DELETE FROM guestbook WHERE ID = '.$_GET['ID'].'';
             mysqli_close($conn);
             ?>
         </h3>
-        <a href="index.php" class="btn btn-secondary mt-3">BACK</a>
+        <a href="index.php" class="btn btn-secondary mt-3">Back</a>
 
     </div>
 </body>
