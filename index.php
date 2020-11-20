@@ -37,7 +37,7 @@
                 <td><?php echo $Result['Link']; ?></td>
                 <td>
                   <a class="btn btn-light" href="edit.php?ID=<?php echo $Result['ID']; ?>">แก้ไข</a>
-                  <a class="btn btn-link" href="delete.php?ID=<?php echo $Result['ID']; ?>">ลบ</a>
+                  <a class="btn btn-danger" href="delete.php?ID=<?php echo $Result['ID']; ?>">ลบ</a>
                 </td>
               </tr>
             <?php
