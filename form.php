@@ -12,7 +12,7 @@
     <div class="card-header bg-info text-white d-flex justify-content-between">
      <h3>เพิ่ม</h4>
      <a href="index.php" class="btn btn-warning">กลับ</a>
-  </div>
+    </div>
     <form action="insert.php" method="post" id="CommentForm">
       <div class="form-group mt-5">
         <label class="m-3" for="name">Name</label>
