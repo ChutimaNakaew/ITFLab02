@@ -9,7 +9,6 @@
 </head>
 <body>
   <div class="container">
-    <div class="card-header bg-info text-white d-flex justify-content-between">
      <h3>เพิ่ม</h4>
      <a href="index.php" class="btn btn-warning">กลับ</a>
     </div>
