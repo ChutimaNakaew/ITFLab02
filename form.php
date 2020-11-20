@@ -9,7 +9,8 @@
 </head>
 <style>
 body {
-  background-color: #ff9966;
+  background-color: #65d598
+;
 }
 </style>
 <body>
