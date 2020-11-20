@@ -11,9 +11,9 @@
 </head>
 <style>
 body { 
-  background: secondary
+  background: #bfbfbf
 }
-
+</style>
 <body>
   <?php
   $conn = mysqli_init();
