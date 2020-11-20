@@ -20,17 +20,12 @@
   $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   ?>
   <div class="container mt-5">
-    <div class="card-header bg-info text-white d-flex justify-content-between">
       <h3>Home</h4>
        <a href="form.php" class="btn btn-warning">Add</a>
     </div>
     <div class="card-body">
-      <div class="container">
-        <h2>Dark Striped Table</h2>
-        <p>Combine .table-dark and .table-striped to create a dark, striped table:
-      </p>            
+      <div class="container">            
         <table class="table table-dark table-striped">
-    </table>
           </thead>
           <tbody>
             <?php
