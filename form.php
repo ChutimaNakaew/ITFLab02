@@ -10,8 +10,8 @@
 <body>
   <div class="container">
     <div class="card-header bg-info text-white d-flex justify-content-between">
-     <h3>Add</h4>
-     <a href="index.php" class="btn btn-warning">Back</a>
+     <h3>เพิ่ม</h4>
+     <a href="index.php" class="btn btn-warning">กลับ</a>
     </div>
     <form action="insert.php" method="post" id="CommentForm">
       <div class="form-group mt-5">
