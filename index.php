@@ -26,6 +26,21 @@
     <div class="card-body">
       <div class="container">            
         <table class="table table-dark table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th width="300">
+                <div align="center">Name</div>
+              </th>
+              <th width="300">
+                <div align="center">Comment </div>
+              </th>
+              <th width="300">
+                <div align="center">Link </div>
+              </th>
+              <th width="300">
+                <div align="center">Action</div>
+              </th>
+            </tr>
           </thead>
           <tbody>
             <?php
