@@ -27,7 +27,7 @@ $sql = "INSERT INTO guestbook (Name , Comment , Link) VALUES ('$name', '$comment
 </head>
 <style>
 body {
-  background-color: #79a2c7
+  background-color: #ffd1c7
 ;
 }
 </style>
