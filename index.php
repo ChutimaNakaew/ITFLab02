@@ -20,8 +20,8 @@
   $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   ?>
   <div class="container mt-5">
-      <h3>Home</h4>
-       <a href="form.php" class="btn btn-warning">Add</a>
+      <h3>หน้าหลัก</h4>
+       <a href="form.php" class="btn btn-warning">เพิ่ม</a>
     </div>
     <div class="card-body">
       <div class="container">            
@@ -36,8 +36,8 @@
                 <td><?php echo $Result['Comment']; ?></td>
                 <td><?php echo $Result['Link']; ?></td>
                 <td>
-                  <a class="btn btn-light" href="edit.php?ID=<?php echo $Result['ID']; ?>">Edit</a>
-                  <a class="btn btn-dark" href="delete.php?ID=<?php echo $Result['ID']; ?>">Delete</a>
+                  <a class="btn btn-light" href="edit.php?ID=<?php echo $Result['ID']; ?>">แก้ไข</a>
+                  <a class="btn btn-link" href="delete.php?ID=<?php echo $Result['ID']; ?>">ลบ</a>
                 </td>
               </tr>
             <?php
