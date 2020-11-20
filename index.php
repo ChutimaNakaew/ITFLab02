@@ -17,14 +17,14 @@
   $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   ?>
   <div class="container mt-5">
-    <div class="card-header bg-primary text-white d-flex justify-content-between">
+    <div class="card-header bg-info text-white d-flex justify-content-between">
       <h3>Home</h4>
-       <a href="form.php" class="btn btn-success">Add</a>
+       <a href="form.php" class="btn btn-warning">Add</a>
     </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-hover table-bordered table-sm">
-          <thead class="thead-dark">
+          <thead class="thead-secondary">
             <tr>
               <th width="300">
                 <div align="center">Name</div>
@@ -49,8 +49,8 @@
                 <td><?php echo $Result['Comment']; ?></td>
                 <td><?php echo $Result['Link']; ?></td>
                 <td>
-                  <a class="btn btn-success" href="edit.php?ID=<?php echo $Result['ID']; ?>">EDIT</a>
-                  <a class="btn btn-danger" href="delete.php?ID=<?php echo $Result['ID']; ?>">DELETE</a>
+                  <a class="btn btn-light" href="edit.php?ID=<?php echo $Result['ID']; ?>">Edit</a>
+                  <a class="btn btn-dark" href="delete.php?ID=<?php echo $Result['ID']; ?>">Delete</a>
                 </td>
               </tr>
             <?php
