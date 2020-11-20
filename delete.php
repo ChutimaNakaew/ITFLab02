@@ -19,7 +19,7 @@ $sql = 'DELETE FROM guestbook WHERE ID = ' . $_GET['ID'] . '';
         <h3>
             <?php
             if (mysqli_query($conn, $sql)) {
-                echo "Delete Completed";
+                echo "Deleted Successfully!";
             } else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
             }
