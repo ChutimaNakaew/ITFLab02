@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-  <div class="container mt-5">
+  <div class="container">
+    <div class="card-header bg-info text-white d-flex justify-content-between">
      <h3>เพิ่ม</h4>
      <a href="index.php" class="btn btn-warning">กลับ</a>
   </div>
