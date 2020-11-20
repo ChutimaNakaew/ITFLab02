@@ -11,7 +11,7 @@
   <div class="container">
     <div class="card-header bg-info text-white d-flex justify-content-between">
      <h3>Add</h4>
-     <a href="index.php" class="btn btn-secondary">Back</a>
+     <a href="index.php" class="btn btn-warning">Back</a>
     </div>
     <form action="insert.php" method="post" id="CommentForm">
       <div class="form-group mt-5">
@@ -22,7 +22,7 @@
           placeholder="Enter Comment"></textarea><br>
         <label class="m-3" for="link">Link</label>
         <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link">
-        <input class="btn btn-warning mt-5" type="submit" id="commentBtn">
+        <input class="btn btn-successs mt-5" type="submit" id="commentBtn">
       </div>
     </form>
   </div>
