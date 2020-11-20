@@ -9,7 +9,7 @@
 </head>
 <style>
 body {
-  background-color: #65d598
+  background-color: lightblue
 ;
 }
 </style>
