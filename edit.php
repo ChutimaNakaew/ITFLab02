@@ -25,7 +25,7 @@
       <div class="container">
           <div class="card-header bg-primary text-white d-flex justify-content-between">
            <h3>EDIT</h3>
-           <a href="index.php" class="btn btn-light">BACK</a>
+           <a href="index.php" class="btn btn-light">Back</a>
           </div>
           <form action="update.php" method="post" id="CommentForm">
               <div class="form-group mt-5">
@@ -36,7 +36,7 @@
                   <textarea rows="5" class="form-control" cols="20" name="comment" id="idComment" ><?php echo $data['Comment'];?></textarea><br>
                   <label class="m-3" for="link">Link</label>
                   <input type="text" class="form-control" name="link" id="idLink" value="<?php echo $data['Link'];?>">
-                  <input class="btn btn-primary mt-5" type="submit" id="commentBtn">
+                  <input class="btn btn-success mt-5" type="submit" id="commentBtn">
               </div>
           </form>
       </div>
