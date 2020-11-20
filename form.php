@@ -22,7 +22,7 @@
           placeholder="Enter Comment"></textarea><br>
         <label class="m-3" for="link">Link</label>
         <input type="text" class="form-control" name="link" id="idLink" placeholder="Enter Link">
-        <input class="btn btn-successs mt-5" type="submit" id="commentBtn">
+        <input class="btn btn-success mt-5" type="submit" id="commentBtn">
       </div>
     </form>
   </div>
